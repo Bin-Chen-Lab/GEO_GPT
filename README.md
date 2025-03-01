@@ -1,1 +1,1 @@
-# GEO_GPT
+# **GEOmeta: Massive Labeled Transcriptomics Dataset**
