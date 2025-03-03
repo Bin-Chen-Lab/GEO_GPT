@@ -17,9 +17,9 @@ This dataset includes:
   - **Standardization prompts** to generate machine-readable labels
 - **Label Prediction Code**
 
-## **Data File Nmae and Location**
-- ANNOTATED_METADATA_HUMANSAMPLES.xlsx
-- ANNOTATED_METADATA_MOUSESAMPLES.xlsx
+## **Data File Name and Location**
+- [HUMAN_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- [MOUSE_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
 - Prmpts are stored in [`data/curation`](data/code/curation)foder.
 -  **Code for label prediction** based on gene expression profiles is available in the [`data/benchmark`](data/code/benchmark) folder.
 
