@@ -41,6 +41,32 @@ The following table describes the columns available in the dataset:
 | **Timepoint (Human)**   | Indicates the time at which the sample was collected relative to an experimental treatment or biological process. | Helps in tracking dynamic changes in gene expression over time, enabling studies on disease progression, treatment response, or developmental stages. |
 | **Outcome (Human)**     | Describes the observed experimental or clinical results associated with the sample, such as disease progression, treatment response, or survival status. | Provides valuable insights for predictive modeling and biomarker discovery, helping to assess correlations between gene expression and phenotypic outcomes. |
 
+## **Transcriptome Representation Learning Benchmarks**
+The goal is to predict the labels of disease/organ/sex/age from learned transcriptome. The following table describes the number of unique labels in each field. 
+|   Dataset          | GSE  | GSM   | Sex | Organ* | Disease | Age group |
+|--------------|------|-------|-----|-------|---------|-----------|
+| Human training | 1858 | 92122 | 2   | 39    | 129     | 13        |
+| Human test    | 206  | 7892  | 2   | 30    | 79      | 13        |
+| Mouse training | 4743 | 90654 | 3   | 210   | 125     | 9         |
+| Mouse test    | 527  | 9425  | 3   | 130   | 71      | 9         |
+
+*Mouse organs have a more granular classification.
+
+Leaderboard for human samples
+|                          | Gender        | Organ         | Disease       | Age           |
+|--------------------------|--------------|--------------|--------------|--------------|
+| scGPT (zero-shot)       | 0.601 ± 0.019 | 0.424 ± 0.310 | 0.221 ± 0.247 | 0.143 ± 0.140 |
+| CellPLM (zero-shot)     | 0.630 ± 0.017 | 0.474 ± 0.319 | 0.240 ± 0.289 | 0.114 ± 0.100 |
+| CellPLM (finetune)      | 0.840 ± 0.012 | 0.710 ± 0.329 | 0.386 ± 0.364 | 0.188 ± 0.189 |
+| Geneformer (zero-shot)  | 0.585 ± 0.045 | 0.391 ± 0.276 | 0.167 ± 0.209 | 0.122 ± 0.100 |
+
+Leaderboard for mouse samples
+|                          | Gender        | Organ         | Disease       | Age           |
+|--------------------------|--------------|--------------|--------------|--------------|
+| scGPT (zero-shot)       | 0.489 ± 0.272 | 0.231 ± 0.269 | 0.132 ± 0.186 | 0.269 ± 0.108 |
+| CellPLM (zero-shot)     | 0.488 ± 0.283 | 0.266 ± 0.305 | 0.167 ± 0.242 | 0.266 ± 0.117 |
+| CellPLM (finetune)      | 0.655 ± 0.221 | 0.401 ± 0.374 | 0.242 ± 0.288 | 0.399 ± 0.167 |
+
 ## **Citation**
 If you find our work helpful in your research, we would greatly appreciate your citation :
 
