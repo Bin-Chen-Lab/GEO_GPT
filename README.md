@@ -1,6 +1,4 @@
 # **GEOmeta: Massive Labeled Transcriptomics Dataset**
-
-<<<<<<< main
 This GitHub repository of GEO_GPT introduces "GEOmeta" from "Massive Labeled Transcriptomics as a Resource of Transcriptome Representation Learning". 
 It is designed for building and querying GEO_Metadata to facilitate large-scale transcriptomics research and machine learning applications in biomedicine.
 This project was developed by researchers at Michigan State University.
