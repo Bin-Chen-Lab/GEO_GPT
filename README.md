@@ -17,20 +17,6 @@ This dataset includes:
 ## **Metadata Structure**
 The following table describes the columns available in the dataset:
 
-| **Column Name**  | **Description** |
-|------------------|----------------|
-| GSM_ID          | GEO Sample ID   |
-| GSE_ID          | GEO Experiment ID |
-| Seq_Type        | Sequencing Type (e.g., Bulk RNA-Seq) |
-| Organism        | Species (Human/Mouse) |
-| Disease         | Condition/disease annotation |
-| Perturbation    | Drug, gene knockout, or environmental factor applied |
-| Gender          | Sex of the donor/sample |
-| Age             | Age of the donor/sample |
-
-## **Dataset Structure**
-The following table describes the columns available in the dataset:
-
 | **FIELD**                  | **DETAIL**                                                                 | **USE** |
 |----------------------------|---------------------------------------------------------------------------|---------|
 | **GSM_ID**                 | The GSM_ID is the unique identifier for each sample within the GEO database. | Ensures that annotations are traceable to their corresponding samples, allowing researchers to pinpoint specific data for verification. |
