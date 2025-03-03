@@ -16,7 +16,7 @@ This dataset includes:
   ## **Data Availability**
 - (benchmark/data/)
 - (benchmark/data/)
-- **Prompts** are stored in [Prompts](curation)foder.
+- **Prompts** are stored in [Prompts](curation) foder.
 -  **Code for label prediction** based on gene expression profiles is available in the [Labeling_code](benchmark/code) folder.
 
 ## **Metadata Structure**
