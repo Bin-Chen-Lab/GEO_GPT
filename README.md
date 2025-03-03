@@ -14,7 +14,7 @@ This dataset includes:
   - **Standardization prompts** to generate machine-readable labels
 - **Label Prediction Code**
 
-## ## **Dataset Structure**
+## **Metadata Structure**
 The following table describes the columns available in the dataset:
 
 | **Column Name**  | **Description** |
