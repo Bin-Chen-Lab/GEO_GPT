@@ -17,7 +17,7 @@ This dataset includes:
 - [Human Metadata](benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
 - [Mouse Metadata](benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
 - [Benchmark data](benchmark/data/GEOMeta100K)
-- [Prompts](curation) foder.
+- [Prompts](curation)
 -  **Code for label prediction** based on gene expression profiles is available in the [Labeling_code](benchmark/code) folder.
 
 ## **Metadata Structure**
