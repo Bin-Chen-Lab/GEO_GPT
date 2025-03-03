@@ -4,25 +4,36 @@ This GitHub repository of GEO_GPT introduces "GEOmeta" from "Massive Labeled Tra
 It is designed for building and querying GEO_Metadata to facilitate large-scale transcriptomics research and machine learning applications in biomedicine.
 This project was developed by researchers at Michigan State University.
 
-
-
-
 ## **Repository Features or Resources**
 This dataset includes:
 
-- **100,000 human samples**
-- **100,000 mouse samples**
+- **100,000 human samples metadata**
+- **100,000 mouse samples metadata**
 - **Prompts:**
   - **Annotation prompts** to process raw metadata
   - **Standardization prompts** to generate machine-readable labels
 - **Label Prediction Code**
 
-## **Data File Name and Location**
+## ## **Dataset Structure**
+The following table describes the columns available in the dataset:
+
+| **Column Name**  | **Description** |
+|------------------|----------------|
+| GSM_ID          | GEO Sample ID   |
+| GSE_ID          | GEO Experiment ID |
+| Seq_Type        | Sequencing Type (e.g., Bulk RNA-Seq) |
+| Organism        | Species (Human/Mouse) |
+| Disease         | Condition/disease annotation |
+| Perturbation    | Drug, gene knockout, or environmental factor applied |
+| Gender          | Sex of the donor/sample |
+| Age             | Age of the donor/sample |
+
+
+## **Data Availability**
 - [HUMAN_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
 - [MOUSE_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
 - Prompts are stored in [`data/curation`](data/code/curation)foder.
 -  **Code for label prediction** based on gene expression profiles is available in the [`data/benchmark`](data/code/benchmark) folder.
-
 
 
 ## **Citation**
