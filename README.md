@@ -1,17 +1,34 @@
 # **GEOmeta: Massive Labeled Transcriptomics Dataset**
 
-GEOmeta is a large-scale, annotated transcriptomics dataset designed to facilitate machine learning research in biomedical applications. This dataset comprises 100,000 human and 100,000 mouse samples, annotated using an AI-driven pipeline leveraging OpenAI's GPT-4 model.
+This GitHub repository of GEO_GPT introduces "GEOmeta" from "Massive Labeled Transcriptomics as a Resource of Transcriptome Representation Learning". 
+It is designed for building and querying GEO_Metadata to facilitate large-scale transcriptomics research and machine learning applications in biomedicine.
+This project was developed by researchers at Michigan State University.
 
-## **How to download the annoatated metadata**
+
+
+
+## **Repository Features or Resources**
+This dataset includes:
+
+- **100,000 human samples**
+- **100,000 mouse samples**
+- **Prompts:**
+  - **Annotation prompts** to process raw metadata
+  - **Standardization prompts** to generate machine-readable labels
+- **Label Prediction Code**
+
+## **Data File Nmae and Location**
 - ANNOTATED_METADATA_HUMANSAMPLES.xlsx
 - ANNOTATED_METADATA_MOUSESAMPLES.xlsx
+- Prmpts are stored in [`data/curation`](data/code/curation)foder.
+-  **Code for label prediction** based on gene expression profiles is available in the [`data/benchmark`](data/code/benchmark) folder.
 
 
-## **Prompts**
-Kindly refer data/curation foder for Annotation prompts,Inference prompts for selected fields and postprocessing or standardization prompts.
 
+## **Citation**
+If you find our work helpful in your research, we would greatly appreciate your citation :
 
-## **Label Prediction**
-Kindly refer data/benchmark folder for code used for label prediction based on gene expression profiles.
+Paithankar, S.*, Zhang, X.*, & Murtaza, S.*, Pu, J., Shankar, R., Leshchiner, D., Tang, J., Dai, X., Xie, Y., Li, X., & Chen, B. (2025). Massive labeled transcriptomics as a resource of transcriptome representation learning. Michigan State University, Grand Rapids, MI, USA.
+
 
 
