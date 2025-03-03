@@ -14,6 +14,12 @@ This dataset includes:
   - **Standardization prompts** to generate machine-readable labels
 - **Label Prediction Code**
 
+  ## **Data Availability**
+- [HUMAN_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- [MOUSE_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- Prompts are stored in [`data/curation`](data/code/curation)foder.
+-  **Code for label prediction** based on gene expression profiles is available in the [`data/benchmark`](data/code/benchmark) folder.
+
 ## **Metadata Structure**
 The following table describes the columns available in the dataset:
 
@@ -37,11 +43,7 @@ The following table describes the columns available in the dataset:
 | **Outcome (Human)**     | Describes the observed experimental or clinical results associated with the sample, such as disease progression, treatment response, or survival status. | Provides valuable insights for predictive modeling and biomarker discovery, helping to assess correlations between gene expression and phenotypic outcomes. |
 
 
-## **Data Availability**
-- [HUMAN_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
-- [MOUSE_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
-- Prompts are stored in [`data/curation`](data/code/curation)foder.
--  **Code for label prediction** based on gene expression profiles is available in the [`data/benchmark`](data/code/benchmark) folder.
+
 
 
 ## **Citation**
