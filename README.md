@@ -14,10 +14,10 @@ This dataset includes:
 - **Label Prediction Code**
 
   ## **Data Availability**
-- [HUMAN_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
-- [MOUSE_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
-- **Prompts** are stored in [`data/curation`](data/code/curation)foder.
--  **Code for label prediction** based on gene expression profiles is available in the [`data/benchmark`](data/code/benchmark) folder.
+- (benchmark/data/)
+- [benchmark/data/)
+- **Prompts** are stored in (curation)foder.
+-  **Code for label prediction** based on gene expression profiles is available in the (benchmark/code) folder.
 
 ## **Metadata Structure**
 The following table describes the columns available in the dataset:
