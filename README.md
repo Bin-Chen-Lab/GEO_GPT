@@ -28,6 +28,24 @@ The following table describes the columns available in the dataset:
 | Gender          | Sex of the donor/sample |
 | Age             | Age of the donor/sample |
 
+## **Dataset Structure**
+The following table describes the columns available in the dataset:
+
+| **FIELD**                  | **DETAIL**                                                                 | **USE** |
+|----------------------------|---------------------------------------------------------------------------|---------|
+| **GSM_ID**                 | The GSM_ID is the unique identifier for each sample within the GEO database. | Ensures that annotations are traceable to their corresponding samples, allowing researchers to pinpoint specific data for verification. |
+| **GSE_ID**                 | The GSE_ID represents the experiment to which individual samples (GSM_IDs) belong. | Links samples to their experiment, helping researchers understand the broader study context and analyze dataset patterns. |
+| **Organism**               | Captures the species or organism from which the sample is derived, using standardized scientific names. | Facilitates cross-study comparisons and dataset integration. For example, distinguishing between *Mus musculus* (Mouse) and *Homo sapiens* (Human) aids in differentiating animal models from human studies. |
+| **Strain**                 | Specifies the genetic background of the organism, including fully expanded strain names or indications of mixed populations. | Critical for understanding genetic influences on experimental results. For example, studies using C57BL/6J mice may yield different outcomes than those using a mixed strain. |
+| **Genotype**               | Details specific genetic modifications, such as knockouts, knockdowns, overexpression, or mutations. | Essential for linking genetic variations to observed phenotypes, enabling targeted analyses such as examining the role of a knockout gene in disease progression. |
+| **Experimental Settings**  | Describes the conditions under which the sample was treated or maintained during the experiment. | Ensures reproducibility and helps control for confounding factors when comparing results across samples or studies. |
+| **Perturbation (Binary Field)** | Indicates whether the given GSE experiment includes perturbation details and whether a specific GSM sample is perturbed or serves as a control. | Enables targeted analysis of responses to specific perturbations. |
+| **Perturbation Details (e.g., Name, Dose, Frequency, Duration, Route)** | Provides specific information about any perturbation applied to the sample. | Helps researchers assess dose-response relationships, therapeutic efficacy, and treatment-specific outcomes. For example, knowing the dose and route of a drug allows for comparisons across pharmacological studies. |
+| **Disease**                | Identifies any disease associated with the GSM sample. | Vital for researchers studying disease mechanisms. |
+| **Age**                    | Records the age of the organism or sample at the time of collection. | Crucial for studies in developmental biology or aging research. Precise age annotations allow for temporal analyses and better result stratification. |
+| **Gender**                 | The biological sex (e.g., male, female) of the organism or donor from which the sample was derived. | Gender is a critical factor in biological and medical studies, influencing physiological and pathological processes such as disease prevalence, progression patterns, and drug response variations. |
+
+
 
 ## **Data Availability**
 - [HUMAN_METADATA](ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
