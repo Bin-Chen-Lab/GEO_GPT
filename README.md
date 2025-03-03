@@ -14,8 +14,9 @@ This dataset includes:
 - **Label Prediction Code**
 
   ## **Data Availability**
-- (benchmark/data/)
-- (benchmark/data/)
+- Human Metadata(benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- Mouse Metadata(benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- Benchmark data(benchmark/data/GEOMeta100K)
 - **Prompts** are stored in [Prompts](curation) foder.
 -  **Code for label prediction** based on gene expression profiles is available in the [Labeling_code](benchmark/code) folder.
 
