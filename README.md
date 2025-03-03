@@ -52,20 +52,20 @@ The goal is to predict the labels of disease/organ/sex/age from learned transcri
 
 *Mouse organs have a more granular classification.
 
-**Leaderboard for human samples**
+**Leaderboard for human samples (F1 score)**
 |                          | Gender        | Organ         | Disease       | Age           |
 |--------------------------|--------------|--------------|--------------|--------------|
 | scGPT (zero-shot)       | 0.601 ± 0.019 | 0.424 ± 0.310 | 0.221 ± 0.247 | 0.143 ± 0.140 |
 | CellPLM (zero-shot)     | 0.630 ± 0.017 | 0.474 ± 0.319 | 0.240 ± 0.289 | 0.114 ± 0.100 |
-| CellPLM (finetune)      | 0.840 ± 0.012 | 0.710 ± 0.329 | 0.386 ± 0.364 | 0.188 ± 0.189 |
+| CellPLM (finetune)      | **0.840 ± 0.012** | **0.710 ± 0.329** | **0.386 ± 0.364** | **0.188 ± 0.189** |
 | Geneformer (zero-shot)  | 0.585 ± 0.045 | 0.391 ± 0.276 | 0.167 ± 0.209 | 0.122 ± 0.100 |
 
-**Leaderboard for mouse samples**
+**Leaderboard for mouse samples (F1 score)**
 |                          | Gender        | Organ         | Disease       | Age           |
 |--------------------------|--------------|--------------|--------------|--------------|
 | scGPT (zero-shot)       | 0.489 ± 0.272 | 0.231 ± 0.269 | 0.132 ± 0.186 | 0.269 ± 0.108 |
 | CellPLM (zero-shot)     | 0.488 ± 0.283 | 0.266 ± 0.305 | 0.167 ± 0.242 | 0.266 ± 0.117 |
-| CellPLM (finetune)      | 0.655 ± 0.221 | 0.401 ± 0.374 | 0.242 ± 0.288 | 0.399 ± 0.167 |
+| CellPLM (finetune)      | **0.655 ± 0.221** | **0.401 ± 0.374** | **0.242 ± 0.288** | **0.399 ± 0.167** |
 
 ## **Citation**
 If you find our work helpful in your research, we would greatly appreciate your citation :
