@@ -33,7 +33,7 @@ with open(mapping_file_path, "r") as file:
 
 if dataset == 'human_gene':
     destination_file = '../benchmark/data/human_gene_v2.2.h5'
-    metadata = pd.read_csv("../benchmark/data/GEO_HUMAN_100K_V2.csv")
+    metadata = pd.read_csv("../benchmark/data/GEOMeta100K/GEO_HUMAN_100K_V2.csv")
     metadata['GSM_ID'] = [bytes(sample, 'utf-8') for sample in metadata['GSM_ID']]
     with h5py.File(destination_file, 'r') as f:
         num_samples = len(f['meta/samples/geo_accession'][:])
@@ -88,7 +88,7 @@ if dataset == 'human_gene':
         del adata.var['ensembl.gene']
         adata = adata[adata.obs['geo_accession'].isin(metadata['GSM_ID'])]
     
-        metadata_train = pd.read_csv("../benchmark/data/GEO_HUMAN_100K_training.csv")
+        metadata_train = pd.read_csv("../benchmark/data/GEOMeta100K/GEO_HUMAN_100K_training.csv")
         train_categories = set(metadata_train['GSM_ID'])
         train_categories = np.array(list(train_categories))
         adata.obs['split'] = 'test'
@@ -103,7 +103,7 @@ if dataset == 'human_gene':
 
 elif dataset == 'mouse_gene':
     destination_file = '../benchmark/data/mouse_gene_v2.2.h5'
-    metadata = pd.read_csv("../benchmark/data/GEO_MOUSE_100K.csv")
+    metadata = pd.read_csv("../benchmark/data/GEOMeta100K/GEO_MOUSE_100K.csv")
     metadata['GSM_ID'] = [bytes(sample, 'utf-8') for sample in metadata['GSM_ID']]
     with h5py.File(destination_file, 'r') as f:
         num_samples = len(f['meta/samples/geo_accession'][:])
@@ -159,7 +159,7 @@ elif dataset == 'mouse_gene':
         adata.write('../benchmark/data/mouse_gene_v2.2.h5ad')
         adata = adata[adata.obs['geo_accession'].isin(metadata['GSM_ID'])]
     
-        metadata_train = pd.read_csv("../benchmark/data/GEO_MOUSE_100K_training.csv")
+        metadata_train = pd.read_csv("../benchmark/data/GEOMeta100K/GEO_MOUSE_100K_training.csv")
         train_categories = set(metadata_train['GSM_ID'])
         train_categories = np.array(list(train_categories))
         adata.obs['split'] = 'test'
