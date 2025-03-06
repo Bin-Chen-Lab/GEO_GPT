@@ -69,6 +69,7 @@ The goal is to predict the labels of disease/organ/sex/age from learned transcri
 | scGPT (zero-shot)       | 0.489 ± 0.272 | 0.231 ± 0.269 | 0.132 ± 0.186 | 0.269 ± 0.108 |
 | CellPLM (zero-shot)     | 0.488 ± 0.283 | 0.266 ± 0.305 | 0.167 ± 0.242 | 0.266 ± 0.117 |
 | CellPLM (finetune)      | **0.655 ± 0.221** | **0.401 ± 0.374** | **0.242 ± 0.288** | **0.399 ± 0.167** |
+
 ![Alt Text](Leaderboard_mouse.png) 
 
 ## **Citation**
