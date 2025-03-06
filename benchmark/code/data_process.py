@@ -24,7 +24,7 @@ def ensembl_to_symbol(gene_list):
                  species='human').reset_index().drop_duplicates(subset='query')['symbol'].fillna('0').tolist()
 
 
-dataset = 'mouse_gene' # or 'human_gene'
+dataset = 'mouse_gene' # 'human_gene'
 
 mapping_file_path = "../benchmark/data/mouse_human_mapping.json"
 with open(mapping_file_path, "r") as file:
