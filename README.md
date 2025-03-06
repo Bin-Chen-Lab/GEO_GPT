@@ -61,12 +61,15 @@ The goal is to predict the labels of disease/organ/sex/age from learned transcri
 | CellPLM (finetune)      | **0.840 ± 0.012** | **0.710 ± 0.329** | **0.386 ± 0.364** | **0.188 ± 0.189** |
 | Geneformer (zero-shot)  | 0.585 ± 0.045 | 0.391 ± 0.276 | 0.167 ± 0.209 | 0.122 ± 0.100 |
 
+![Alt Text](Leaderboard_human.png) 
+
 **Leaderboard for mouse samples (F1 score)**
 |                          | Gender        | Organ         | Disease       | Age           |
 |--------------------------|--------------|--------------|--------------|--------------|
 | scGPT (zero-shot)       | 0.489 ± 0.272 | 0.231 ± 0.269 | 0.132 ± 0.186 | 0.269 ± 0.108 |
 | CellPLM (zero-shot)     | 0.488 ± 0.283 | 0.266 ± 0.305 | 0.167 ± 0.242 | 0.266 ± 0.117 |
 | CellPLM (finetune)      | **0.655 ± 0.221** | **0.401 ± 0.374** | **0.242 ± 0.288** | **0.399 ± 0.167** |
+![Alt Text](Leaderboard_mouse.png) 
 
 ## **Citation**
 If you find our work helpful in your research, we would greatly appreciate your citation :
