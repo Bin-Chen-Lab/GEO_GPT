@@ -14,10 +14,10 @@ This dataset includes:
 - **Label Prediction Code**
 
   ## **Data Availability**
-- Human Metadata(benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
-- Mouse Metadata(benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
-- Benchmark data(benchmark/data/GEOMeta100K)
-- **Prompts** are stored in [Prompts](curation) foder.
+- [Human Metadata](benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- [Mouse Metadata](benchmark/data/ANNOTATED_METADATA_HUMANSAMPLES.xlsx)
+- [Benchmark data](benchmark/data/GEOMeta100K)
+- [Prompts](curation)
 -  **Code for label prediction** based on gene expression profiles is available in the [Labeling_code](benchmark/code) folder.
 
 ## **Metadata Structure**
@@ -32,7 +32,7 @@ The following table describes the columns available in the dataset:
 | **Genotype**               | Details specific genetic modifications, such as knockouts, knockdowns, overexpression, or mutations. | Essential for linking genetic variations to observed phenotypes, enabling targeted analyses such as examining the role of a knockout gene in disease progression. |
 | **Experimental Settings**  | Describes the conditions (In vivo, Ex vivo, In Vitro under which the sample was treated or maintained during the experiment. | Ensures reproducibility and helps control for confounding factors when comparing results across samples or studies. |
 | **Model (Mouse)**     | Specifies the experimental model used, including gene knock-in, gene knock-out, drug-induced disease models, and patient-derived induced pluripotent stem cells (iPSCs). | Helps researchers distinguish between different genetic and pharmacological modifications used in mouse models for studying disease mechanisms and therapeutic responses. |
-| **Specimen Type (Human)** | Describes the type of human sample, such as **tissue, cell line, blood, or primary cells**. | Enables precise categorization of human samples, ensuring proper context for gene expression analysis and cross-study comparisons. |
+| **Specimen Type (Human)** | Describes the type of human sample, such as primary tissue, cell line, isolated cells , PDX or organoid. | Enables precise categorization of human samples, ensuring proper context for gene expression analysis and cross-study comparisons. |
 | **RNA Source**  | Specifies the biological origin of the extracted RNA, such as blood, tissue, or cultured cells. | Essential for understanding the sample context, as gene expression profiles can vary significantly depending on the RNA source. |
 | **Organ**       | Identifies the specific organ or tissue from which the sample was derived. | Crucial for linking gene expression patterns to specific physiological functions, diseases, and experimental conditions. |
 | **Disease**                | Identifies any disease associated with the GSM sample. | Vital for researchers studying disease mechanisms. |
@@ -60,6 +60,9 @@ The goal is to predict the labels of disease/organ/sex/age from learned transcri
 | CellPLM (zero-shot)     | 0.630 ± 0.017 | 0.474 ± 0.319 | 0.240 ± 0.289 | 0.114 ± 0.100 |
 | CellPLM (finetune)      | **0.840 ± 0.012** | **0.710 ± 0.329** | **0.386 ± 0.364** | **0.188 ± 0.189** |
 | Geneformer (zero-shot)  | 0.585 ± 0.045 | 0.391 ± 0.276 | 0.167 ± 0.209 | 0.122 ± 0.100 |
+| H20_AutoML              | 0.641 ± 0.051 | 0.31 ± 0.276 | 0.176 ± 0.263 | 0.129 ± 0.124 |
+
+![Alt Text](Leaderboard_human.png) 
 
 **Leaderboard for mouse samples (F1 score)**
 |                          | Gender        | Organ         | Disease       | Age           |
@@ -67,6 +70,9 @@ The goal is to predict the labels of disease/organ/sex/age from learned transcri
 | scGPT (zero-shot)       | 0.489 ± 0.272 | 0.231 ± 0.269 | 0.132 ± 0.186 | 0.269 ± 0.108 |
 | CellPLM (zero-shot)     | 0.488 ± 0.283 | 0.266 ± 0.305 | 0.167 ± 0.242 | 0.266 ± 0.117 |
 | CellPLM (finetune)      | **0.655 ± 0.221** | **0.401 ± 0.374** | **0.242 ± 0.288** | **0.399 ± 0.167** |
+| H20_AutoML              | 0.495 ± 0.367 | 0.014 ± 0.05 | 0.018 ± 0.045 | 0.127 ± 0.119 |
+
+![Alt Text](Leaderboard_mouse.png) 
 
 ## **Citation**
 If you find our work helpful in your research, we would greatly appreciate your citation :
